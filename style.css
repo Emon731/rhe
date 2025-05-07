@@ -1,58 +1,82 @@
-/* Reset some basic styles */
-body, h1, h2, p, ul {
-    margin: 0;
-    padding: 0;
-}
-
-/* Body styling */
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
 }
 
-/* Header styling */
-header {
-    background-color: #0066cc;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
+.navbar {
+  background: #333;
+  color: #fff;
+  padding: 10px;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
-nav ul li {
-    margin: 0 15px;
+.navbar li {
+  margin-right: 20px;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+.navbar a:hover {
+  color: #ffd700;
 }
 
-/* Main content */
-main {
-    padding: 40px 20px;
-    text-align: center;
+.page {
+  padding: 20px;
 }
 
-/* Footer styling */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.course {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  flex: 1 1 200px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.course:hover {
+  transform: scale(1.05);
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 30px;
 }

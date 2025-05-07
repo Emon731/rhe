@@ -1,32 +1,63 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>আমার ওয়েবসাইট</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Educational Website</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>আমার ওয়েবসাইটে স্বাগতম</h1>
-        <nav>
-            <ul>
-                <li><a href="#">হোম</a></li>
-                <li><a href="#">আমাদের সম্পর্কে</a></li>
-                <li><a href="#">সেবা</a></li>
-                <li><a href="#">যোগাযোগ</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section class="intro">
-            <h2>আমাদের সম্পর্কে</h2>
-            <p>আমরা একটি উদ্ভাবনী টিম, যারা ওয়েব ডিজাইন ও ডেভেলপমেন্ট সেবা দিয়ে থাকি।</p>
-        </section>
-    </main>
+  <!-- Menu Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#" onclick="showPage('home')">Home</a></li>
+      <li><a href="#" onclick="showPage('courses')">Courses</a></li>
+      <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+    </ul>
+  </nav>
 
-    <footer>
-        <p>&copy; ২০২৫ আমার ওয়েবসাইট। সর্বস্বত্ব সংরক্ষিত।</p>
-    </footer>
+  <!-- Pages -->
+  <div id="home" class="page">
+    <h1>Welcome to Our Courses</h1>
+    <div class="course-list">
+      <div class="course">
+        <h2>Bangla</h2>
+        <button onclick="alert('Enrolled in Bangla')">Enroll Now</button>
+      </div>
+      <div class="course">
+        <h2>English</h2>
+        <button onclick="alert('Enrolled in English')">Enroll Now</button>
+      </div>
+      <div class="course">
+        <h2>Physics</h2>
+        <button onclick="alert('Enrolled in Physics')">Enroll Now</button>
+      </div>
+      <div class="course">
+        <h2>Mathematics</h2>
+        <button onclick="alert('Enrolled in Mathematics')">Enroll Now</button>
+      </div>
+      <div class="course">
+        <h2>Chemistry</h2>
+        <button onclick="alert('Enrolled in Chemistry')">Enroll Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="courses" class="page" style="display: none;">
+    <h1>All Courses</h1>
+    <p>Details about each course will be updated here soon.</p>
+  </div>
+
+  <div id="contact" class="page" style="display: none;">
+    <h1>Contact Us</h1>
+    <p>Email us at: <a href="mailto:ratulhassanemon54@gmail.com">ratulhassanemon54@gmail.com</a></p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Educational Website. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
